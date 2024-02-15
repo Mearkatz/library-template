@@ -1,8 +1,8 @@
 [package]
-name = "library-template"
+name = "{{project-name}}"
 version = "0.1.0"
 edition = "2021"
-authors = ["beetle"]
+authors = ["{{authors}}"]
 description = "a library for adding two numbers"
 license = "MIT"
 

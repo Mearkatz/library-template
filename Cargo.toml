@@ -6,12 +6,14 @@ authors = ["{{authors}}"]
 description = "a library for adding two numbers"
 license = "MIT"
 
+[lints.rust]
+unsafe_code = { level = "deny", priority = -1 }
 
 [lints.clippy]
-enum_glob_use = "deny"
-pedantic = "deny"
-nursery = "deny"
-unwrap_used = "deny"
-expect_used = "deny"
+enum_glob_use = { level = "deny", priority = -2 }
+pedantic = { level = "deny", priority = -3 }
+nursery = { level = "deny", priority = -4 }
+unwrap_used = { level = "deny", priority = -5 }
+expect_used = { level = "deny", priority = -6 }
 
 [dependencies]
